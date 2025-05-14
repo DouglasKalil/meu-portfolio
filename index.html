@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    
+    <title>Meu portifólio</title>
+</head>
+<body>
+    
+    <div id="conteiner">
+
+        <div id="cabecalho">
+            Olá, sou
+            <ul class="menu">
+                <li>
+                    <a href="sobre.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="habilidades.html">Habilidades</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="conteudo-apresentacao">
+            
+            <div class="conteiner-imagem-perfil">
+                <img src="imagens/imagem-perfil 3.jpg" alt="foto de perfil" class="imagem-perfil">
+            </div>
+
+            <div id="info-apresentacao">
+                <h2>DOUGLAS <br>
+                KALIL
+                </h2>
+                <h3>Desenvolvedor Web</h3>
+                <a href="#">Veja meus projetos</a>
+            </div>
+            
+        </div>
+
+        <div id="conteudo-sobre">
+            <h2>Sobre mim</h2>
+            <p>Sou apaixonado por desenvolvimento web, sempre buscando aprender e criar soluções criativas...</p>
+        
+            <h2>Projetos</h2>
+            <div class="projetos-grid" id="projetos-lista">
+                <div class="card-projeto">
+                    <img src="imagens/projeto1.jpg" alt="Projeto 1">
+                    <h3>Kabank</h3>
+                    <p>CRUD de usuários com Node.js, Express e MySQL.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="card-projeto">
+                    <img src="imagens/projeto2.jpg" alt="Projeto 2">
+                    <h3>Portfólio</h3>
+                    <p>Site pessoal com HTML, CSS e JS.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+                <div class="card-projeto extra">
+                    <img src="imagens/projeto3.jpg" alt="Projeto 3">
+                    <h3>API Node.js</h3>
+                    <p>API REST para gerenciamento de tarefas.</p>
+                    <a href="#" target="_blank">Ver no GitHub</a>
+                </div>
+            </div>
+        
+            <button id="btn-ver-mais">Ver mais</button>
+            <button id="btn-darkmode">Modo escuro</button>
+        </div>
+        
+
+        <div id="conteudo-habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="habilidades">
+                <div class="habilidade-card">
+                    <img src="imagens/icone-html.png" alt="HTML">
+                    <p>HTML5</p>
+                </div>
+                <div class="habilidade-card">
+                    <img src="imagens/icone-css.png" alt="CSS">
+                    <p>CSS3</p>
+                </div>
+                <div class="habilidade-card">
+                    <img src="imagens/icone-js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="habilidade-card">
+                    <img src="imagens/icone-mysql.png" alt="mysql">
+                    <p>MySQL</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
