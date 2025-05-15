@@ -1,3 +1,4 @@
+
 // Mostrar mais projetos
 document.getElementById('btn-ver-mais').addEventListener('click', function() {
     document.querySelectorAll('.card-projeto.extra').forEach(card => {
@@ -25,4 +26,16 @@ window.addEventListener('DOMContentLoaded', () => {
         container.classList.add('animar-entrada');
     }
 });
+
+
+// botão hamburguer//
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const burger = document.querySelector('.hamburguer');
+
+    menu.classList.toggle('active');
+    burger.classList.toggle('active');
+}
+
 

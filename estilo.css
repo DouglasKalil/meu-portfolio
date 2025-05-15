@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
     background: #d6d6d6;
@@ -11,8 +12,11 @@ body{
 }
 
 #cabecalho{
-    
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -189,6 +193,10 @@ body.darkmode a {
     background: #f0f0f0;
     color: #121212;
 }
+body.darkmode p {
+    background: #f0f0f0;
+    color: #121212;
+}
 
 body.darkmode a:hover {
     background: #bbb;
@@ -290,8 +298,10 @@ body.darkmode a:hover {
     }
 
     .menu {
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 10px;
     }
 
     .menu a {
@@ -456,4 +466,55 @@ body.darkmode a:hover {
     filter: brightness(1.2);
 }
 
+
+.hamburguer {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    right: 20px; /* Agora no lado direito */
+    z-index: 20;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background: #2764a9;
+        position: absolute;
+        top: 60px;
+        right: 20px; /* alinhado com o botão */
+        z-index: 10;
+        width: 160px;
+        border-radius: 10px;
+        padding: 10px 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.hamburguer.active {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
 
